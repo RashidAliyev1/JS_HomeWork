@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:bisque;
+    font-size: 20px;
+    outline: none;
+    padding: 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 30px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .container .result {
+    background: #000;
+    border-radius: 8px;
+    color: white;
+    text-align: right;
+  }
+  .container .values input {
+    background: white;
+  }
+  .container button {
+    background-color: rgb(231, 227, 227);
+  }
+  .container .reset {
+    background-color: rgb(225, 102, 36);
+    border: 3px solid;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .values .value1,
+    .values .value2 {
+      width: 100%;
+    }
+    .values .value2{
+      margin-top: 3%;
+    }
+  }
